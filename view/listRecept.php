@@ -14,7 +14,7 @@ include_once '..\classes\BD_otladchik.php';
     foreach ($selectAll_array as $values) { ?>
 
     <ul>
-        <li><?php echo $values['Name']; ?></li>
+        <li><a href="recept.php?id=<?php $values['id']; ?>"><?php echo $values['Name']; ?></a></li>
     </ul>
 
     <?php
