@@ -23,8 +23,20 @@ class SQL_work {
     }
     public function Select() {
         $selectAll = mysql_query("SELECT * FROM News");
-        mysql_close();
         return $selectAll;
+    }
+    public function Rsort() {
+        $rsort = mysql_query("SELECT *FROM News ORDER BY Date DESC");
+        return $rsort;
+    }
+    public function SelectAll_array() {
+        $array = new SQL_work;
+        $select = $array->Rsort();
+
+        while(($value = mysql_fetch_array($select)) !== false) {
+            $selectAll_array[] = $value;
+        }
+        return $selectAll_array;
     }
 }
 
