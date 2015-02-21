@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hibiki
- * Date: 21.02.2015
- * Time: 19:19
- */ 
+abstract class Recept {
+    public $name;
+    public $ingredients;
+    public $cook;
+    abstract public function Recept($name, $ingredients, $cook);
+}
+
