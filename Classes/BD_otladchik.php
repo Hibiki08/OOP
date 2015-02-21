@@ -1,7 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hibiki
- * Date: 21.02.2015
- * Time: 23:44
- */ 
+include_once __DIR__ . '\SQL.php';
+
+class BD_otladchik extends SQL_work {
+    public function Rsort() {
+        $rsort = mysql_query("SELECT *FROM News ORDER BY Date DESC");
+        return $rsort;
+    }
+    public function SelectAll_array() {
+        $array = new SQL_work;
+        $select = $array->Rsort();
+
+        while(($value = mysql_fetch_array($select)) !== false) {
+            $selectAll_array[] = $value;
+        }
+        return $selectAll_array;
+    }
+}
