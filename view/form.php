@@ -3,7 +3,7 @@
         <meta charset="utf-8"/>
     </head>
     <body>
-        <form action="..\model\new_recept.php" method="post">
+        <form action="\dz9\OOP\model\new_recept.php" method="post">
             <label>Название:
             <input type="text" name="name"/>
             </label><br/>
