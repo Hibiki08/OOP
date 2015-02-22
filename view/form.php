@@ -6,12 +6,13 @@
         <form action="" method="post">
             <label>Название:
             <input type="text" name="name"/>
-            </label>
+            </label><br/>
             <label>Ингредиенты:
             <textarea name="ingredients"></textarea>
-            </label>
+            </label><br/>
             <label>Приготовление:
-            <textarea name="cook"></textarea>
+            <textarea name="cook"></textarea><br/>
+            <input type="submit" value="Отправить рецепт" />
             </label>
         </form>
     </body>
