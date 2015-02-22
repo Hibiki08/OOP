@@ -1,5 +1,5 @@
 <?php
-include_once '..\classes\BD_otladchik.php';
+include_once __DIR__ . '\..\classes\BD_otladchik.php';
 ?>
 
 <html>
