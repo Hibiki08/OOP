@@ -1,7 +1,3 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hibiki
- * Date: 22.02.2015
- * Time: 16:34
- */ 
+include_once __DIR__ . '\view\form.php';
+include_once __DIR__ . '\view\listRecept.php';
